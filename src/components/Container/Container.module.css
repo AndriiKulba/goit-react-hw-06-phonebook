@@ -1,0 +1,34 @@
+.container {
+  max-width: 420px;
+  height: 800px;
+  margin-left: auto;
+  margin-right: auto;
+
+  padding: 5px;
+  border: 10px solid black;
+  border-radius: 7%;
+  background-color: rgb(59, 57, 57);
+}
+.Container__top {
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  margin-top: -10px;
+  margin-left: auto;
+  margin-right: auto;
+  border: black;
+  border-radius: 35%;
+  background-color: black;
+}
+
+.Container__bottom {
+  width: 75px;
+  height: 10px;
+  margin-top: -10px;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  border: black;
+  border-radius: 10%;
+  background-color: black;
+}

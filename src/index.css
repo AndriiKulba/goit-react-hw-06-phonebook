@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#root {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1600px;
+  padding: 30px;
+  background-image: url('./components/Phonebook/BGImage.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: initial;
+  background-size: cover;
+}
