@@ -1,5 +1,5 @@
 .contacts__list {
-  height: 440px;
+  height: 480px;
   list-style: none;
   text-align: left;
   padding: 10px;
@@ -24,4 +24,11 @@
 }
 ::-webkit-scrollbar {
   display: none;
+}
+
+button {
+  background-color: rgb(39, 36, 36);
+  cursor: pointer;
+  border: none;
+  outline: none;
 }

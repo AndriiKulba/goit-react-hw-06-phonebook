@@ -2,29 +2,85 @@
   margin-top: 0px;
 }
 .phonebook__form {
-  display: block;
-  width: 300px;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
 
   margin: auto;
   padding: 15px;
   margin-top: 15px;
   background-color: rgb(39, 36, 36);
 }
-
-.phonebook__name input,
-.phonebook__tel input {
-  margin-left: 10px;
-  margin-bottom: 15px;
+.phonebook__field {
+  position: relative;
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
+}
+.phonebook__field input {
+  width: 80%;
+  padding: 4px;
+  padding-top: 8px;
+  padding-left: 70px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.01em;
   color: white;
+  font-style: italic;
   background-color: rgb(39, 36, 36);
-  border: none;
-  border-bottom: 1px solid whitesmoke;
+
+  border-bottom: 1px solid rgb(131, 128, 128);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1;
 }
-input {
-  text-decoration: white;
+
+.phonebook__field input:focus {
+  padding-left: 10px;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+  outline: none;
 }
+
+.phonebook__field input:focus + .phonebook__name,
+.phonebook__field input:focus + .phonebook__tel {
+  color: rgb(185, 181, 181);
+  top: 6px;
+  left: 65px;
+  transform: translateY(-100%);
+}
+
 .phonebook__name,
 .phonebook__tel {
-  font-style: italic;
-  color: white;
+  position: absolute;
+  top: 50%;
+  left: 28px;
+  transform: translateY(-50%);
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.01em;
+  padding: 0px 2px;
+  background-color: rgb(39, 36, 36);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+
+  color: rgb(131, 128, 128);
+  z-index: 2;
+}
+.phonebook__btn {
+  background-color: rgb(39, 36, 36);
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+.phonebook__field Icon {
+  position: absolute;
+  top: 50%;
+  left: 19px;
+  transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }

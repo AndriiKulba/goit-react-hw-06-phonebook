@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Icon from '@material-ui/core/Icon';
+import grey from '@material-ui/core/colors/grey';
 import s from './ContactItem.module.css';
-import { v4 as uuidv4 } from 'uuid';
 
 const ContactItem = ({ visibleContacts, deleteContact }) => {
   return (
@@ -13,7 +14,9 @@ const ContactItem = ({ visibleContacts, deleteContact }) => {
               {name}: {number}
             </p>
             <button type="button" onClick={() => deleteContact(id)}>
-              Delete
+              <Icon style={{ color: grey[50], fontSize: 26 }}>
+                delete_forever
+              </Icon>
             </button>
           </li>
         );

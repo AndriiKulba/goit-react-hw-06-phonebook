@@ -29,9 +29,8 @@ input[type='text']::placeholder {
   height: 30px;
   border: 0;
   border-radius: 10px;
-  background-image: url('https://image.flaticon.com/icons/svg/149/149852.svg');
-  background-size: 70%;
-  fill: white;
+  background-color: white;
+
   background-repeat: no-repeat;
   background-position: center;
   opacity: 0.8;
@@ -40,7 +39,6 @@ input[type='text']::placeholder {
   outline: none;
 }
 .phonebook__icon {
-  position: absolute;
   width: 1px;
   height: 1px;
   padding: 0;
