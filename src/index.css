@@ -24,3 +24,50 @@ code {
   background-attachment: initial;
   background-size: cover;
 }
+
+.accordion {
+  height: 480px;
+  list-style: none;
+  text-align: left;
+  padding: 10px;
+  overflow-y: auto;
+  /* border: 1px solid grey; */
+  border-radius: 2%;
+  background-color: rgb(51, 47, 47);
+}
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: rgb(39, 36, 36);
+
+  border-radius: 10px;
+}
+.contacts__item:not(:last-child) {
+  margin-bottom: 1px;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: rgb(39, 36, 36);
+
+  border-radius: 10px;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+button {
+  background-color: rgb(39, 36, 36);
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
